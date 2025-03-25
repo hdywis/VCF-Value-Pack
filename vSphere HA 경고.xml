@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><alertContent>
+    <AlertDefinitions>
+        <AlertDefinition adapterKind="VMWARE" description="vSphere HA 로 VM 이 재부팅되었습니다. 켜져 있는 호스트 정보를 같이 확인하세요." disableInBasePolicy="true" id="AlertDefinition-054fef12-0177-45f2-a67f-ee7056188782" name="[CJ] vSphere HA 로 VM 이 재부팅 되었습니다." resourceKind="VirtualMachine" subType="18" type="16">
+            <State severity="automatic">
+                <SymptomSet applyOn="self" operator="or" ref="SymptomDefinition-d607c7a3-1ab9-4cb9-95ba-8b2cf1341ece"/>
+                <Impact key="health" type="badge"/>
+                <Recommendations>
+                    <Recommendation priority="1" ref="Recommendation-ud-93c51186-ee16-4541-a524-18b33f262e8d"/>
+                </Recommendations>
+            </State>
+        </AlertDefinition>
+    </AlertDefinitions>
+    <SymptomDefinitions>
+        <SymptomDefinition adapterKind="VMWARE" disableInBasePolicy="true" id="SymptomDefinition-d607c7a3-1ab9-4cb9-95ba-8b2cf1341ece" name="[CJ] vSphere HA restarted virtual machine - Change" resourceKind="VirtualMachine">
+            <State severity="immediate">
+                <Condition eventMsg="vSphere HA restarted virtual machine" eventSubType="14" eventType="10" operator="contains" type="msg_event"/>
+            </State>
+        </SymptomDefinition>
+    </SymptomDefinitions>
+    <Recommendations>
+        <Recommendation key="Recommendation-ud-93c51186-ee16-4541-a524-18b33f262e8d">
+            <Description>[CJ] 목록에 있는 VM 을 점검하세요.</Description>
+        </Recommendation>
+    </Recommendations>
+</alertContent>
