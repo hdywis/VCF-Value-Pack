@@ -1,0 +1,99 @@
+{
+  "name":"vSphere HA 대시보드",
+  "namespace":"vsphere.ha",
+  "contentPackId":"vsphere.ha",
+  "framework":"#9c4",
+  "version":"2.4",
+  "extractedFields":[ {
+    "displayName":"HA_Cluster",
+    "preContext":"virtual machines in cluster ",
+    "postContext":" in datacenter",
+    "regexValue":"\\S+",
+    "internalName":"ibadcmc7ozzxa2dfojss42dbjbav6q3movzxizls",
+    "constraints":"{\"filters\":[{\"internalName\":\"appname\",\"displayName\":\"appname\",\"operator\":\"CONTAINS\",\"value\":\"vcenter-server\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}],\"searchTerms\":\"vSphere HA initiated a failover action\"}",
+    "info":null
+  }, {
+    "displayName":"HA_Cluster (2)",
+    "preContext":"in cluster ",
+    "postContext":"",
+    "regexValue":"\\S+",
+    "internalName":"ibadcmc7ozzxa2dfojss42dbjbav6q3movzxizlseaudeki0",
+    "constraints":"{\"filters\":[{\"internalName\":\"appname\",\"displayName\":\"appname\",\"operator\":\"CONTAINS\",\"value\":\"vcenter-server\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}],\"searchTerms\":\"vSphere HA restarted virtual machine\"}",
+    "info":null
+  }, {
+    "displayName":"HA_initiated",
+    "preContext":"vSphere HA initiated a failover action on ",
+    "postContext":" virtual machines in cluster ",
+    "regexValue":"-?\\d+",
+    "internalName":"ibadcmc7ozzxa2dfojss42dbjbav62lonf2gsylumvsa0000",
+    "constraints":"{\"filters\":[{\"internalName\":\"appname\",\"displayName\":\"appname\",\"operator\":\"CONTAINS\",\"value\":\"vcenter-server\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  } ],
+  "queries":[ ],
+  "alerts":[ ],
+  "dashboardSections":[ {
+    "views":[ {
+      "name":"[CJ] vSphere HA 대시보드",
+      "constraints":[ ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"HA 가 시작된 클러스터 with 재부팅 시작되는 VM 수량",
+          "info":"",
+          "gridWidth":"1",
+          "chartType":"column",
+          "chartOptions":"{\"spline\":true,\"legend\":true,\"stacking\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1742824271822,\"endTimeMillis\":1742824675009,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Sum\",\"value\":\"SUM\",\"requiresField\":true,\"numericOnly\":true}],\"field\":{\"internalName\":\"ibadcmc7ozzxa2dfojss42dbjbav62lonf2gsylumvsa0000\",\"displayName\":\"HA_initiated\",\"displayNamespace\":\"Unknown\"}}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"ASC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Sum\",\"value\":\"SUM\",\"requiresField\":true,\"numericOnly\":true},\"piqlFunctionField\":\"ibadcmc7ozzxa2dfojss42dbjbav62lonf2gsylumvsa0000\",\"fieldConstraints\":[{\"internalName\":\"appname\",\"operator\":\"CONTAINS\",\"value\":\"vcenter-server\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"vsphere ha initiated a failover action\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"HA_Cluster\",\"internalName\":\"ibadcmc7ozzxa2dfojss42dbjbav6q3movzxizls\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"HA_Cluster\",\"preContext\":\"virtual machines in cluster \",\"postContext\":\" in datacenter\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcmc7ozzxa2dfojss42dbjbav6q3movzxizls\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"appname\\\",\\\"displayName\\\":\\\"appname\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcenter-server\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}],\\\"searchTerms\\\":\\\"vSphere HA initiated a failover action\\\"}\"},{\"displayName\":\"HA_initiated\",\"preContext\":\"vSphere HA initiated a failover action on \",\"postContext\":\" virtual machines in cluster \",\"regexValue\":\"-?\\\\d+\",\"internalName\":\"ibadcmc7ozzxa2dfojss42dbjbav62lonf2gsylumvsa0000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"appname\\\",\\\"displayName\\\":\\\"appname\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcenter-server\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"vSphere HA restarted virtual machine (VM 이 HA 로 재부팅됨)",
+          "info":"",
+          "gridWidth":"1",
+          "chartType":"column",
+          "chartOptions":"{\"logaxis\":false,\"trendline\":false,\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"ha\",\"startTimeMillis\":1742824166019,\"endTimeMillis\":1742825445506,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"ASC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"appname\",\"operator\":\"CONTAINS\",\"value\":\"vcenter-server\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"vsphere ha restarted virtual machine\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"호스트별 재부팅된 VM 수량",
+          "info":"",
+          "chartType":"number",
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":false,\"doublegroupbystacking\":\"none\",\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"ha\",\"startTimeMillis\":1742824500000,\"endTimeMillis\":1742825100000,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"ASC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"appname\",\"operator\":\"CONTAINS\",\"value\":\"vcenter-server\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"vsphere ha restarted virtual machine\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"hostname\",\"internalName\":\"hostname\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"HA_Cluster (2)\",\"internalName\":\"ibadcmc7ozzxa2dfojss42dbjbav6q3movzxizlseaudeki0\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"HA_Cluster (2)\",\"preContext\":\"in cluster \",\"postContext\":\"\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcmc7ozzxa2dfojss42dbjbav6q3movzxizlseaudeki0\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"appname\\\",\\\"displayName\\\":\\\"appname\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcenter-server\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}],\\\"searchTerms\\\":\\\"vSphere HA restarted virtual machine\\\"}\"}]}",
+          "messageQuery":""
+        }, {
+          "name":"재부팅된 VM 이름 및 호스트 위치",
+          "info":"",
+          "chartType":"number",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"ha\",\"startTimeMillis\":1742824500000,\"endTimeMillis\":1742825100000,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"ASC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"appname\",\"operator\":\"CONTAINS\",\"value\":\"vcenter-server\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"vsphere ha restarted virtual machine\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vc_vm_name\",\"internalName\":\"vc_vm_name\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"hostname\",\"internalName\":\"hostname\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"HA_Cluster (2)\",\"internalName\":\"ibadcmc7ozzxa2dfojss42dbjbav6q3movzxizlseaudeki0\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"HA_Cluster (2)\",\"preContext\":\"in cluster \",\"postContext\":\"\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcmc7ozzxa2dfojss42dbjbav6q3movzxizlseaudeki0\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"appname\\\",\\\"displayName\\\":\\\"appname\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcenter-server\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}],\\\"searchTerms\\\":\\\"vSphere HA restarted virtual machine\\\"}\"}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"vSphere HA completed a virtual machine failover action  (HA 완료)",
+          "info":"",
+          "gridWidth":"1",
+          "chartType":"column",
+          "chartOptions":"{\"logaxis\":false,\"trendline\":false,\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"ha\",\"startTimeMillis\":1742824166019,\"endTimeMillis\":1742825445506,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"ASC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"appname\",\"operator\":\"CONTAINS\",\"value\":\"vcenter-server\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"vsphere ha completed a virtual machine failover action\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        } ]
+      } ],
+      "itemUuid":"9060b234-e040-3dc3-a748-9820caf9e92b"
+    } ],
+    "header":""
+  } ],
+  "aliasFields":[ ],
+  "aliasRules":[ ],
+  "author":"",
+  "url":"",
+  "contentVersion":"1.0"
+}
