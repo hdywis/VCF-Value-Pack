@@ -292,7 +292,7 @@
                   "title": "데이터센터 리소스 현황",
                   "boxHeight": null,
                   "showResourceName": {"showResourceName": false},
-                  "roundDecimals": null,
+                  "roundDecimals": 2,
                   "mode": {"layoutMode": "fixedView"},
                   "labelSize": 16,
                   "customFilter": {
@@ -383,7 +383,7 @@
                            "colorMethod": 0
                         },
                         {
-                           "yellowBound": 2,
+                           "yellowBound": 0.2,
                            "metricUnitId": null,
                            "metricName": "CPU|Current Overcommit Ratio",
                            "metricKey": "cpu|vcpus_to_cores_allocation_ratio",
@@ -393,9 +393,9 @@
                            "isStringMetric": false,
                            "resourceKindId": "resourceKind:id:1_::_",
                            "label": "CPU 할당율",
-                           "orangeBound": 3,
+                           "orangeBound": 2,
                            "unit": "",
-                           "redBound": 4,
+                           "redBound": 3,
                            "id": "extModel8557-5",
                            "colorMethod": 0
                         },
@@ -478,7 +478,7 @@
                   "title": "클러스터 리소스 현황",
                   "boxHeight": null,
                   "showResourceName": {"showResourceName": false},
-                  "roundDecimals": null,
+                  "roundDecimals": 2,
                   "mode": {"layoutMode": "fixedView"},
                   "labelSize": 16,
                   "customFilter": {
@@ -693,7 +693,7 @@
             }
          ],
          "states": [{
-            "value": "o%3AdateRange%3Ds%253Alast7Days%5EdateRangeText%3Ds%253A7D",
+            "value": "o%3AdateRange%3Ds%253AlastHour%5EdateRangeText%3Ds%253A1H",
             "key": "permDashboardTime_dashboard_7d891142-46d8-454c-a4da-f454752e69c9"
          }],
          "homeTab": false,
@@ -738,7 +738,7 @@
          "userId": "5fc465dc-1ef2-423d-aeaa-b821d96ed86f",
          "name": "[VCF Value Pack] 1. Basic/[VCF-11] vSphere 인벤토리 대시보드",
          "gridsterMaxColumns": 12,
-         "lastUpdateTime": 1739160202879
+         "lastUpdateTime": 1742733339698
       },
       {
          "shared": true,
@@ -769,7 +769,7 @@
                      "traversalSpecId": "",
                      "resourceName": "vSphere World",
                      "resourceKindId": "002006VMWAREvSphere World",
-                     "id": "Ext.vcops.chrome.model.Resource-2"
+                     "id": "Ext.vcops.chrome.model.Resource-244"
                   },
                   "traversalSpecId": null,
                   "refreshContent": {"refreshContent": false},
@@ -783,10 +783,6 @@
                "height": 495,
                "states": [
                   {
-                     "value": "n%3A10",
-                     "key": "permPageSize_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970"
-                  },
-                  {
                      "value": "b%3A1",
                      "key": "perm_toolbarVisible_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970"
                   },
@@ -799,7 +795,7 @@
                      "key": "perm_isDashboardTime_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970"
                   },
                   {
-                     "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-0%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-summary%2525257Cruntime%2525257CpowerState1%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-cpu%2525257Cusage_average2%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-mem%2525257Cusage_average3%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-net%2525257Cusage_average4%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-virtualDisk%2525253AAggregate%25252520of%25252520all%25252520instances%2525257CcommandsAveraged_average5%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-virtualDisk%2525253AAggregate%25252520of%25252520all%25252520instances%2525257CcommandsAveraged_average6%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-virtualDisk%2525253AAggregate%25252520of%25252520all%25252520instances%2525257CcommandsAveraged_average7%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-virtualDisk%2525253AAggregate%25252520of%25252520all%25252520instances%2525257CcommandsAveraged_average8%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-virtualDisk%2525253AAggregate%25252520of%25252520all%25252520instances%2525257Cusage9%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-virtualDisk%2525253AAggregate%25252520of%25252520all%25252520instances%2525257CtotalLatency10%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-sys%2525257CosUptime_latest11%25255Ehidden%25253Db%2525253A0",
+                     "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-0%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-cpu%2525257Cusage_average1%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-cpu%2525257CreadyPct2%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-mem%2525257Cusage_average3%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-mem%2525257Chost_contentionPct4%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-net%2525257Cusage_average5%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-net%2525257CdroppedTx_summation6%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-virtualDisk%2525253AAggregate%25252520of%25252520all%25252520instances%2525257CcommandsAveraged_average7%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-virtualDisk%2525253AAggregate%25252520of%25252520all%25252520instances%2525257CtotalLatency8%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-summary%2525257Cruntime%2525257CpowerState9%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-sys%2525257CosUptime_latest10%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-summary%2525257Cdatastore11%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-summary%2525257CparentHost12%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-summary%2525257CparentCluster13%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-summary%2525257CparentDatacenter14%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970-column-summary%2525257CparentVcenter15%25255Ehidden%25253Db%2525253A0",
                      "key": "permTableView_widget_54900e00-ce87-43ba-a2e0-37ac29399c75_466a3cd5-6635-491b-9650-9d82571d6970"
                   }
                ]
@@ -1888,7 +1884,7 @@
          "userId": "5fc465dc-1ef2-423d-aeaa-b821d96ed86f",
          "name": "[VCF Value Pack] 1. Basic/[VCF-12] 가상머신 성능분석 대시보드",
          "gridsterMaxColumns": 12,
-         "lastUpdateTime": 1739160221565
+         "lastUpdateTime": 1742734064523
       },
       {
          "shared": true,
@@ -1905,7 +1901,7 @@
                "collapsed": false,
                "id": "8299d154-fa8b-4b8e-bb8a-512f871fccc3",
                "gridsterCoords": {
-                  "w": 6,
+                  "w": 7,
                   "x": 1,
                   "h": 14,
                   "y": 1
@@ -1919,7 +1915,7 @@
                      "traversalSpecId": "",
                      "resourceName": "vSphere World",
                      "resourceKindId": "002006VMWAREvSphere World",
-                     "id": "Ext.vcops.chrome.model.Resource-4"
+                     "id": "Ext.vcops.chrome.model.Resource-404"
                   },
                   "traversalSpecId": null,
                   "refreshContent": {"refreshContent": false},
@@ -1934,10 +1930,14 @@
                "states": [
                   {
                      "value": "b%3A1",
+                     "key": "perm_isDashboardTime_widget_dffca2be-9064-4873-abf8-3dcc00008545_8299d154-fa8b-4b8e-bb8a-512f871fccc3"
+                  },
+                  {
+                     "value": "b%3A1",
                      "key": "perm_toolbarVisible_widget_dffca2be-9064-4873-abf8-3dcc00008545_8299d154-fa8b-4b8e-bb8a-512f871fccc3"
                   },
                   {
-                     "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_8299d154-fa8b-4b8e-bb8a-512f871fccc3-column-0%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_8299d154-fa8b-4b8e-bb8a-512f871fccc3-column-diskspace%2525257Csnapshot%2525257CsnapshotAge1%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_8299d154-fa8b-4b8e-bb8a-512f871fccc3-column-diskspace%2525257Csnapshot2%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_8299d154-fa8b-4b8e-bb8a-512f871fccc3-column-summary%2525257Cruntime%2525257CpowerState3%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_8299d154-fa8b-4b8e-bb8a-512f871fccc3-column-summary%2525257Cdatastore4%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_8299d154-fa8b-4b8e-bb8a-512f871fccc3-column-summary%2525257CparentCluster5%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_8299d154-fa8b-4b8e-bb8a-512f871fccc3-column-summary%2525257CparentDatacenter6%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_8299d154-fa8b-4b8e-bb8a-512f871fccc3-column-summary%2525257CparentVcenter7%25255Ehidden%25253Db%2525253A0",
+                     "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_8299d154-fa8b-4b8e-bb8a-512f871fccc3-column-0%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_8299d154-fa8b-4b8e-bb8a-512f871fccc3-column-diskspace%2525257Csnapshot%2525257CsnapshotAge1%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_8299d154-fa8b-4b8e-bb8a-512f871fccc3-column-diskspace%2525257Csnapshot2%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_8299d154-fa8b-4b8e-bb8a-512f871fccc3-column-diskspace%2525257Csnapshot3%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_8299d154-fa8b-4b8e-bb8a-512f871fccc3-column-summary%2525257Cruntime%2525257CpowerState4%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_8299d154-fa8b-4b8e-bb8a-512f871fccc3-column-summary%2525257Cdatastore5%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_8299d154-fa8b-4b8e-bb8a-512f871fccc3-column-summary%2525257CparentHost6%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_8299d154-fa8b-4b8e-bb8a-512f871fccc3-column-summary%2525257CparentCluster7%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_8299d154-fa8b-4b8e-bb8a-512f871fccc3-column-summary%2525257CparentDatacenter8%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_8299d154-fa8b-4b8e-bb8a-512f871fccc3-column-summary%2525257CparentVcenter9%25255Ehidden%25253Db%2525253A0",
                      "key": "permTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_8299d154-fa8b-4b8e-bb8a-512f871fccc3"
                   },
                   {
@@ -1950,10 +1950,10 @@
                "collapsed": false,
                "id": "db999212-5242-4eda-9fc6-432c77e5e2bf",
                "gridsterCoords": {
-                  "w": 6,
-                  "x": 7,
-                  "h": 7,
-                  "y": 8
+                  "w": 7,
+                  "x": 1,
+                  "h": 8,
+                  "y": 15
                },
                "type": "View",
                "title": "스냅샷 상세 정보",
@@ -1969,10 +1969,10 @@
                   "title": "스냅샷 상세 정보",
                   "viewDefinitionId": "cf6a3f77-df2f-483c-8db7-d263af36ab8e"
                },
-               "height": 381,
+               "height": 437,
                "states": [
                   {
-                     "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_db999212-5242-4eda-9fc6-432c77e5e2bf-column-0%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_db999212-5242-4eda-9fc6-432c77e5e2bf-column-diskspace%2525253A6426%2525257Csnapshot%2525253Asnapshot-2%2525257Cname1%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_db999212-5242-4eda-9fc6-432c77e5e2bf-column-diskspace%2525253A6426%2525257Csnapshot%2525253Asnapshot-2%2525257CnumberOfDays2%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_db999212-5242-4eda-9fc6-432c77e5e2bf-column-diskspace%2525253A6426%2525257Csnapshot%2525253Asnapshot-2%2525257Cused3%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_db999212-5242-4eda-9fc6-432c77e5e2bf-column-diskspace%2525253A6426%2525257Csnapshot%2525253Asnapshot-2%2525257CaccessTime4%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_db999212-5242-4eda-9fc6-432c77e5e2bf-column-Instance%25252520Name5%25255Ehidden%25253Db%2525253A0",
+                     "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_db999212-5242-4eda-9fc6-432c77e5e2bf-column-0%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_db999212-5242-4eda-9fc6-432c77e5e2bf-column-diskspace%2525253A6426%2525257Csnapshot%2525253Asnapshot-2%2525257CnumberOfDays1%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_db999212-5242-4eda-9fc6-432c77e5e2bf-column-diskspace%2525253A6426%2525257Csnapshot%2525253Asnapshot-2%2525257Cused2%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_db999212-5242-4eda-9fc6-432c77e5e2bf-column-diskspace%2525253A566%2525257Csnapshot%2525253Asnapshot-1%2525257Cused3%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_db999212-5242-4eda-9fc6-432c77e5e2bf-column-diskspace%2525253A6426%2525257Csnapshot%2525253Asnapshot-2%2525257Cname4%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_db999212-5242-4eda-9fc6-432c77e5e2bf-column-diskspace%2525253A6426%2525257Csnapshot%2525253Asnapshot-2%2525257CaccessTime5%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_db999212-5242-4eda-9fc6-432c77e5e2bf-column-Instance%25252520Name6%25255Ehidden%25253Db%2525253A0",
                      "key": "permTableView_widget_dffca2be-9064-4873-abf8-3dcc00008545_db999212-5242-4eda-9fc6-432c77e5e2bf"
                   },
                   {
@@ -1985,13 +1985,13 @@
                "collapsed": false,
                "id": "e38f20b6-512c-4d8f-9647-0ded6a7d4d89",
                "gridsterCoords": {
-                  "w": 6,
-                  "x": 7,
+                  "w": 5,
+                  "x": 8,
                   "h": 7,
-                  "y": 1
+                  "y": 8
                },
                "type": "View",
-               "title": "스냅샷 용량별 VM 분포",
+               "title": "스냅샷 용량 분포",
                "config": {
                   "refreshInterval": 300,
                   "resource": {
@@ -1999,7 +1999,7 @@
                      "traversalSpecId": "",
                      "resourceName": "vSphere World",
                      "resourceKindId": "002006VMWAREvSphere World",
-                     "id": "Ext.vcops.chrome.model.Resource-14"
+                     "id": "Ext.vcops.chrome.model.Resource-382"
                   },
                   "traversalSpecId": null,
                   "refreshContent": {"refreshContent": false},
@@ -2011,7 +2011,7 @@
                   ],
                   "selectFirstRow": {"selectFirstRow": false},
                   "selfProvider": {"selfProvider": true},
-                  "title": "스냅샷 용량별 VM 분포",
+                  "title": "스냅샷 용량 분포",
                   "viewDefinitionId": "e19c56be-454a-4d8e-b87a-08f6d18b0303"
                },
                "height": 381,
@@ -2024,22 +2024,22 @@
                "collapsed": false,
                "id": "063a70fc-1d42-4efc-94a2-39db3fa7609f",
                "gridsterCoords": {
-                  "w": 12,
-                  "x": 1,
-                  "h": 5,
-                  "y": 15
+                  "w": 5,
+                  "x": 8,
+                  "h": 4,
+                  "y": 19
                },
                "type": "HealthChart",
-               "title": "데이터스토어 용량 추세",
+               "title": "선택된 VM의 데이터스토어 용량 추세",
                "config": {
                   "yellowBound": 80,
                   "metricName": "Capacity|Used Space (%)",
                   "metricKey": "capacity|usedSpacePct",
                   "relationshipMode": {"relationshipMode": -1},
                   "sortByDir": {"orderByDir": "asc"},
-                  "title": "데이터스토어 용량 추세",
+                  "title": "선택된 VM의 데이터스토어 용량 추세",
                   "showResourceName": {"showResourceName": true},
-                  "chartHeight": 190,
+                  "chartHeight": 135,
                   "metricUnit": {
                      "metricUnitId": -1,
                      "metricUnitName": "Default Unit"
@@ -2085,15 +2085,104 @@
                   "metricLabel": "",
                   "redBound": 95
                },
-               "height": 266,
+               "height": 209,
                "states": [{
                   "value": "s%3A%7B%22dateRange%22%3A%22dashboardTime%22%2C%22dateFrom%22%3Anull%2C%22dateTo%22%3Anull%2C%22timeFrom%22%3Anull%2C%22timeTo%22%3Anull%7D",
                   "key": "permDateRange_HealthChart_widget_dffca2be-9064-4873-abf8-3dcc00008545_063a70fc-1d42-4efc-94a2-39db3fa7609f"
                }]
+            },
+            {
+               "collapsed": false,
+               "id": "ca8f594d-e4cd-4536-8c75-7c1e92f1a252",
+               "gridsterCoords": {
+                  "w": 5,
+                  "x": 8,
+                  "h": 4,
+                  "y": 15
+               },
+               "type": "HealthChart",
+               "title": "선택된 VM 스냅샷 용량 추세",
+               "config": {
+                  "yellowBound": 100,
+                  "metricName": "Disk Space|Snapshot Space (GB)",
+                  "metricKey": "diskspace|snapshot",
+                  "relationshipMode": {"relationshipMode": 0},
+                  "sortByDir": {"orderByDir": "asc"},
+                  "title": "선택된 VM 스냅샷 용량 추세",
+                  "showResourceName": {"showResourceName": true},
+                  "chartHeight": 135,
+                  "metricUnit": {
+                     "metricUnitId": "gb",
+                     "metricUnitName": "GB"
+                  },
+                  "mode": "all",
+                  "metricType": {"metricType": "custom"},
+                  "filterMode": "tagPicker",
+                  "tagFilter": null,
+                  "paginationNumber": 15,
+                  "customFilter": {
+                     "filter": [],
+                     "excludedResources": null,
+                     "includedResources": null
+                  },
+                  "selectFirstRow": {"selectFirstRow": false},
+                  "sortBy": "metricValue",
+                  "selfProvider": {"selfProvider": false},
+                  "refreshInterval": 300,
+                  "resource": [],
+                  "refreshContent": {"refreshContent": false},
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "orangeBound": 200,
+                  "metricFullName": "Disk Space|Snapshot Space (GB)",
+                  "showMetricLabel": {"showMetricLabel": false},
+                  "depth": 1,
+                  "metricLabel": "",
+                  "redBound": 300
+               },
+               "height": 210,
+               "states": [{
+                  "value": "s%3A%7B%22dateRange%22%3A%22dashboardTime%22%2C%22dateFrom%22%3Anull%2C%22dateTo%22%3Anull%2C%22timeFrom%22%3Anull%2C%22timeTo%22%3Anull%7D",
+                  "key": "permDateRange_HealthChart_widget_dffca2be-9064-4873-abf8-3dcc00008545_ca8f594d-e4cd-4536-8c75-7c1e92f1a252"
+               }]
+            },
+            {
+               "collapsed": false,
+               "id": "a1f1bf6b-9aa6-4d8a-b100-c5ad8fbfda8f",
+               "gridsterCoords": {
+                  "w": 5,
+                  "x": 8,
+                  "h": 7,
+                  "y": 1
+               },
+               "type": "View",
+               "title": "스냅샷 기간 분포",
+               "config": {
+                  "refreshInterval": 300,
+                  "resource": {
+                     "resourceId": "resource:id:0_::_",
+                     "traversalSpecId": "",
+                     "resourceName": "vSphere World",
+                     "resourceKindId": "002006VMWAREvSphere World",
+                     "id": "Ext.vcops.chrome.model.Resource-381"
+                  },
+                  "traversalSpecId": null,
+                  "refreshContent": {"refreshContent": false},
+                  "isUpdatedView": true,
+                  "chartViewItems": [
+                     "legend",
+                     "labels",
+                     "title"
+                  ],
+                  "selectFirstRow": {"selectFirstRow": false},
+                  "selfProvider": {"selfProvider": true},
+                  "title": "스냅샷 기간 분포",
+                  "viewDefinitionId": "2f93ce87-f64f-4687-b588-59c59f1fa444"
+               },
+               "height": 381
             }
          ],
          "states": [{
-            "value": "o%3AdateRange%3Ds%253Alast7Days%5EdateRangeText%3Ds%253ALast%25207%2520days",
+            "value": "o%3AdateRange%3Ds%253AlastYear%5EdateRangeText%3Ds%253ALast%2520year",
             "key": "permDashboardTime_dashboard_dffca2be-9064-4873-abf8-3dcc00008545"
          }],
          "homeTab": false,
@@ -2112,6 +2201,11 @@
                "widgetIdProvider": "8299d154-fa8b-4b8e-bb8a-512f871fccc3",
                "type": "resourceId",
                "widgetIdReceiver": "063a70fc-1d42-4efc-94a2-39db3fa7609f"
+            },
+            {
+               "widgetIdProvider": "8299d154-fa8b-4b8e-bb8a-512f871fccc3",
+               "type": "resourceId",
+               "widgetIdReceiver": "ca8f594d-e4cd-4536-8c75-7c1e92f1a252"
             }
          ],
          "namePath": "[VCF Value Pack] 1. Basic",
@@ -2120,8 +2214,258 @@
          "userId": "5fc465dc-1ef2-423d-aeaa-b821d96ed86f",
          "name": "[VCF Value Pack] 1. Basic/[VCF-13] 스냅샷 관리 대시보드",
          "gridsterMaxColumns": 12,
-         "lastUpdateTime": 1739160237735
+         "lastUpdateTime": 1742734981024
+      },
+      {
+         "shared": true,
+         "temporary": false,
+         "hidden": false,
+         "creationTime": 1739941212953,
+         "autoswitchEnabled": false,
+         "importAttempts": 0,
+         "columnProportion": "1",
+         "importComplete": true,
+         "description": "",
+         "widgets": [
+            {
+               "collapsed": false,
+               "id": "e3b0505c-c639-4e10-ade9-2bd647448597",
+               "gridsterCoords": {
+                  "w": 6,
+                  "x": 1,
+                  "h": 9,
+                  "y": 1
+               },
+               "type": "View",
+               "title": "VM별 디스크 사용 현황",
+               "config": {
+                  "refreshInterval": 300,
+                  "resource": {
+                     "resourceId": "resource:id:0_::_",
+                     "traversalSpecId": "vSphere Hosts and Clusters-VMWARE-vSphere World",
+                     "resourceName": "vSphere World",
+                     "resourceKindId": "002006VMWAREvSphere World",
+                     "id": "Ext.vcops.chrome.model.Resource-2"
+                  },
+                  "traversalSpecId": null,
+                  "refreshContent": {"refreshContent": false},
+                  "isUpdatedView": true,
+                  "chartViewItems": [],
+                  "selectFirstRow": {"selectFirstRow": true},
+                  "selfProvider": {"selfProvider": true},
+                  "title": "VM별 디스크 사용 현황",
+                  "viewDefinitionId": "a9cb0b94-8f04-43e0-a51b-de64bb749fd5"
+               },
+               "height": 495,
+               "states": [
+                  {
+                     "value": "s%3A%7B%22minType%22%3A%22.TimeIntervalControl%22%2C%22advancedTimeMode%22%3Afalse%2C%22fromTime%22%3Anull%2C%22unit%22%3A%22DAYS%22%2C%22count%22%3A7%2C%22priorUnit%22%3Anull%2C%22priorCount%22%3Anull%2C%22startSubUnit%22%3Anull%2C%22startPeriod%22%3Anull%2C%22toTime%22%3Anull%2C%22endUnit%22%3Anull%2C%22endCount%22%3Anull%2C%22endSubUnit%22%3Anull%2C%22endPeriod%22%3Anull%2C%22isRealTimeData%22%3Anull%2C%22mondayHours%22%3Anull%2C%22tuesdayHours%22%3Anull%2C%22wednesdayHours%22%3Anull%2C%22thursdayHours%22%3Anull%2C%22fridayHours%22%3Anull%2C%22saturdayHours%22%3Anull%2C%22sundayHours%22%3Anull%7D",
+                     "key": "permSelectedDate_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_e3b0505c-c639-4e10-ade9-2bd647448597"
+                  },
+                  {
+                     "value": "b%3A1",
+                     "key": "perm_toolbarVisible_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_e3b0505c-c639-4e10-ade9-2bd647448597"
+                  },
+                  {
+                     "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253ApermTableView_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_e3b0505c-c639-4e10-ade9-2bd647448597-column-0%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_e3b0505c-c639-4e10-ade9-2bd647448597-column-%252525uC778%252525uC2A4%252525uD134%252525uC2A4%25252520%252525uC774%252525uB9841%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_e3b0505c-c639-4e10-ade9-2bd647448597-column-guestfilesystem%2525253A/%2525257Ccapacity2%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_e3b0505c-c639-4e10-ade9-2bd647448597-column-guestfilesystem%2525253A/%2525257Cpercentage3%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_e3b0505c-c639-4e10-ade9-2bd647448597-column-guestfilesystem%2525253A/%2525257Cpercentage4%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_e3b0505c-c639-4e10-ade9-2bd647448597-column-guestfilesystem%2525253A/%2525257Cfreespace5%25255Ehidden%25253Db%2525253A0",
+                     "key": "permTableView_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_e3b0505c-c639-4e10-ade9-2bd647448597"
+                  },
+                  {
+                     "value": "n%3A10",
+                     "key": "permPageSize_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_e3b0505c-c639-4e10-ade9-2bd647448597"
+                  }
+               ]
+            },
+            {
+               "collapsed": false,
+               "id": "e7f4a024-39aa-4917-900c-08c4a5f44fce",
+               "gridsterCoords": {
+                  "w": 6,
+                  "x": 7,
+                  "h": 9,
+                  "y": 1
+               },
+               "type": "View",
+               "title": "각 파티션 사용 현황",
+               "config": {
+                  "resource": null,
+                  "chartViewItems": [],
+                  "selfProvider": {"selfProvider": false},
+                  "title": "각 파티션 사용 현황",
+                  "viewDefinitionId": "a9cb0b94-8f04-43e0-a51b-de64bb749fd5"
+               },
+               "height": 495,
+               "states": [
+                  {
+                     "value": "b%3A0",
+                     "key": "perm_isDashboardTime_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_e7f4a024-39aa-4917-900c-08c4a5f44fce"
+                  },
+                  {
+                     "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253ApermTableView_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_e7f4a024-39aa-4917-900c-08c4a5f44fce-column-0%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_e7f4a024-39aa-4917-900c-08c4a5f44fce-column-%252525uC778%252525uC2A4%252525uD134%252525uC2A4%25252520%252525uC774%252525uB9841%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_e7f4a024-39aa-4917-900c-08c4a5f44fce-column-guestfilesystem%2525253A/%2525257Ccapacity2%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_e7f4a024-39aa-4917-900c-08c4a5f44fce-column-guestfilesystem%2525253A/%2525257Cpercentage3%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_e7f4a024-39aa-4917-900c-08c4a5f44fce-column-guestfilesystem%2525253A/%2525257Cpercentage4%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_e7f4a024-39aa-4917-900c-08c4a5f44fce-column-guestfilesystem%2525253A/%2525257Cfreespace5%25255Ehidden%25253Db%2525253A0",
+                     "key": "permTableView_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_e7f4a024-39aa-4917-900c-08c4a5f44fce"
+                  }
+               ]
+            },
+            {
+               "collapsed": false,
+               "id": "e9eee816-f780-4bcb-8f29-db71e1535f4c",
+               "gridsterCoords": {
+                  "w": 12,
+                  "x": 1,
+                  "h": 4,
+                  "y": 10
+               },
+               "type": "HealthChart",
+               "title": "게스트 파일 시스템 사용율 추세",
+               "config": {
+                  "yellowBound": 70,
+                  "metricName": "Guest File System|Utilization (%)",
+                  "metricKey": "guestfilesystem|percentage_total",
+                  "relationshipMode": {"relationshipMode": 0},
+                  "sortByDir": {"orderByDir": "asc"},
+                  "title": "게스트 파일 시스템 사용율 추세",
+                  "showResourceName": {"showResourceName": true},
+                  "chartHeight": 135,
+                  "metricUnit": {
+                     "metricUnitId": -1,
+                     "metricUnitName": "Default Unit"
+                  },
+                  "mode": "all",
+                  "metricType": {"metricType": "custom"},
+                  "filterMode": "tagPicker",
+                  "tagFilter": null,
+                  "paginationNumber": 15,
+                  "customFilter": {
+                     "filter": [],
+                     "excludedResources": null,
+                     "includedResources": null
+                  },
+                  "selectFirstRow": {"selectFirstRow": false},
+                  "sortBy": "metricValue",
+                  "selfProvider": {"selfProvider": false},
+                  "refreshInterval": 300,
+                  "resource": [],
+                  "refreshContent": {"refreshContent": false},
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "orangeBound": 80,
+                  "metricFullName": "Guest File System|Utilization (%)",
+                  "showMetricLabel": {"showMetricLabel": false},
+                  "depth": 1,
+                  "metricLabel": "",
+                  "redBound": 90
+               },
+               "height": 210,
+               "states": [{
+                  "value": "s%3A%7B%22dateRange%22%3A%22dashboardTime%22%2C%22dateFrom%22%3Anull%2C%22dateTo%22%3Anull%2C%22timeFrom%22%3Anull%2C%22timeTo%22%3Anull%7D",
+                  "key": "permDateRange_HealthChart_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_e9eee816-f780-4bcb-8f29-db71e1535f4c"
+               }]
+            },
+            {
+               "collapsed": false,
+               "id": "2e863b90-15b8-46a4-bc0a-2f13a8529df4",
+               "gridsterCoords": {
+                  "w": 4,
+                  "x": 1,
+                  "h": 7,
+                  "y": 14
+               },
+               "type": "MetricPicker",
+               "title": "Guest File System 검색 해서 메트릭 더블 클릭",
+               "config": {
+                  "refreshInterval": 300,
+                  "refreshContent": {"refreshContent": false},
+                  "title": "Guest File System 검색 해서 메트릭 더블 클릭"
+               },
+               "height": 381,
+               "states": [
+                  {
+                     "value": "b%3A0",
+                     "key": "permFetchCommonMetrics_permMetricPicker_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_2e863b90-15b8-46a4-bc0a-2f13a8529df4"
+                  },
+                  {
+                     "value": "b%3A0",
+                     "key": "permFetchCollectingMetrics_permMetricPicker_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_2e863b90-15b8-46a4-bc0a-2f13a8529df4"
+                  },
+                  {
+                     "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1",
+                     "key": "permMetricPicker_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_2e863b90-15b8-46a4-bc0a-2f13a8529df4"
+                  },
+                  {
+                     "value": "b%3A0",
+                     "key": "permFetchPropertyMetrics_permMetricPicker_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_2e863b90-15b8-46a4-bc0a-2f13a8529df4"
+                  }
+               ]
+            },
+            {
+               "collapsed": false,
+               "id": "83a1aadd-2a5a-4690-bb1a-6e21db389cad",
+               "gridsterCoords": {
+                  "w": 8,
+                  "x": 5,
+                  "h": 7,
+                  "y": 14
+               },
+               "type": "MetricChart",
+               "title": "Metric Chart",
+               "config": {},
+               "height": 380,
+               "states": [
+                  {
+                     "value": "b%3A0",
+                     "key": "permBtn_zoomAllGraphs_permMetricChart_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_83a1aadd-2a5a-4690-bb1a-6e21db389cad"
+                  },
+                  {
+                     "value": "b%3A0",
+                     "key": "permBtn_pan_permMetricChart_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_83a1aadd-2a5a-4690-bb1a-6e21db389cad"
+                  },
+                  {
+                     "value": "s%3A%7B%22dateRange%22%3A%22dashboardTime%22%2C%22dateFrom%22%3Anull%2C%22dateTo%22%3Anull%2C%22timeFrom%22%3Anull%2C%22timeTo%22%3Anull%7D",
+                     "key": "permDateRange1_permMetricChart_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_83a1aadd-2a5a-4690-bb1a-6e21db389cad"
+                  },
+                  {
+                     "value": "o%3A",
+                     "key": "permMetricChart_widget_852231e5-0ec7-43a8-9e0c-6d7d7ebeea89_83a1aadd-2a5a-4690-bb1a-6e21db389cad"
+                  }
+               ]
+            }
+         ],
+         "states": [],
+         "homeTab": false,
+         "rank": 0,
+         "disabled": false,
+         "id": "852231e5-0ec7-43a8-9e0c-6d7d7ebeea89",
+         "locked": false,
+         "dashboardNavigations": {},
+         "widgetInteractions": [
+            {
+               "widgetIdProvider": "e3b0505c-c639-4e10-ade9-2bd647448597",
+               "type": "resourceId",
+               "widgetIdReceiver": "e7f4a024-39aa-4917-900c-08c4a5f44fce"
+            },
+            {
+               "widgetIdProvider": "e3b0505c-c639-4e10-ade9-2bd647448597",
+               "type": "resourceId",
+               "widgetIdReceiver": "e9eee816-f780-4bcb-8f29-db71e1535f4c"
+            },
+            {
+               "widgetIdProvider": "e3b0505c-c639-4e10-ade9-2bd647448597",
+               "type": "resourceId",
+               "widgetIdReceiver": "2e863b90-15b8-46a4-bc0a-2f13a8529df4"
+            },
+            {
+               "widgetIdProvider": "2e863b90-15b8-46a4-bc0a-2f13a8529df4",
+               "type": "metricId",
+               "widgetIdReceiver": "83a1aadd-2a5a-4690-bb1a-6e21db389cad"
+            }
+         ],
+         "namePath": "[VCF Value Pack] 1. Basic",
+         "lastUpdateUserId": "5fc465dc-1ef2-423d-aeaa-b821d96ed86f",
+         "columnCount": 1,
+         "userId": "5fc465dc-1ef2-423d-aeaa-b821d96ed86f",
+         "name": "[VCF Value Pack] 1. Basic/[VCF-14] VM OS용량 관리 대시보드",
+         "gridsterMaxColumns": 12,
+         "lastUpdateTime": 1743000370224
       }
    ],
-   "uuid": "9ee373d1-32ba-4862-828f-a90a9c71e726"
+   "uuid": "35ab4f05-a4cb-42b0-a7e7-fce7bfa9c565"
 }
